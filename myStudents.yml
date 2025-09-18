@@ -1,7 +1,7 @@
 ---
 - myStudents: 
   - name: anil
-    phno: 090900090
+    phno: 090900090 
     address:  
         doorNo: 01
         street: 02
