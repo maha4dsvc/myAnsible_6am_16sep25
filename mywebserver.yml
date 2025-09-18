@@ -1,6 +1,7 @@
 ---
 - hosts: all 
   become: yes
+  gather_facts: yes
   tasks: 
   - name: i want to install webserver on ubutu nodes ( $ sudo apt-get install apcche2 )
     apt: 
