@@ -4,25 +4,9 @@
   tasks:
     - name: Ensure Java is installed
       apt:
-        name: openjdk-11-jdk
+        name: "{{myjavapackonubuntu}}"
         state: present
         update_cache: yes
       when: ansible_os_family == "Debian"
     
-    - name: Verify Java installation
-      command: java -version
-      register: java_version
-      ignore_errors: yes
-      when: ansible_os_family == "Debian"
-
-    - name: Display Java version
-      debug:
-        msg: "{{ java_version.stdout }}"
-      when: ansible_os_family == "Debian
-
     
- 
-
-
-
-
