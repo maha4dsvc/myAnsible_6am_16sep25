@@ -2,4 +2,5 @@
 var01: value
 mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
-myjavapackonubuntu: java-1.8.0-amazon-corretto-jdk
+myjavapackonubuntu: openjdk-17-jdk
+myjavapackonredhat: java-17-amazon-corretto-devel

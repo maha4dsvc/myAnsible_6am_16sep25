@@ -2,11 +2,17 @@
 - hosts: mywebserver
   become: yes
   tasks:
-    - name: Ensure Java is installed
+    - name: Ensure Java is installed in Ubuntu
       apt:
         name: "{{myjavapackonubuntu}}"
         state: present
         update_cache: yes
       when: ansible_os_family == "Debian"
+
+    - name: Ensure Java is installed in RedHat
+      yum:
+        name: "{{myjavapackonredhat}}"
+        state: present
+      when: ansible_os_family == "RedHat"
     
     
