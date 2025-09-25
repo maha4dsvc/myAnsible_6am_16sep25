@@ -2,5 +2,6 @@
 - hosts: 172.31.23.88
   become: yes
   tasks: 
-  - include_tasks: myfile.yml
+  - name: include tasks
+    include_tasks: myfile.yml
     
