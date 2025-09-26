@@ -16,7 +16,7 @@
       state: present
 
   - name: copy index.j2 file copy into nodes
-    tempplate:
+    template:
          src:  myIndex.j2
          dest: /var/www/html/index.html
 
