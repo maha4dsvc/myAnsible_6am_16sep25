@@ -4,4 +4,16 @@
   tasks: 
   - name: include tasks
     include_tasks: myfile.yml
+
+  - name: copy my test file 
+    copy:
+      src: mytestfile
+      dest: /home/maha/mytestfile
+    
+  - name: install apache2 webserver 
+    apt: 
+      name: apache2
+      state: present
+
+
     
