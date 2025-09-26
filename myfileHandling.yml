@@ -19,5 +19,11 @@
     template:
          src:  myIndex.j2
          dest: /var/www/html/index.html
+    notify: restartwebserver
+  
+  - name: restartwebserver
+    service:
+       name: apache2
+       state: restarted
 
     
