@@ -1,0 +1,6 @@
+---
+- hosts: myAppserver
+  become: yes
+  roles:
+  - mytomcaterole 
+  

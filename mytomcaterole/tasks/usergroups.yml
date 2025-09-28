@@ -1,0 +1,14 @@
+---
+- name: create group
+  group:
+    name: tomcat
+    state: present
+
+
+- name: create tomcat usergroups.yml
+  user:
+    name: tomcat
+    shell: /bin/false
+    home: /opt/tomcat
+    group: tomcat
+    state: present

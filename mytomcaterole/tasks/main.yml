@@ -1,3 +1,10 @@
 #SPDX-License-Identifier: MIT-0
 ---
 # tasks file for mytomcaterole
+- include_tasks: installjava.yml
+- include_tasks: downloadPackage.yml
+- include_tasks: usergroups.yml
+- include_tasks: permission.yml
+- include_tasks: tomcatserverfile.yml
+- include_tasks: tomcatrestart.yml
+
